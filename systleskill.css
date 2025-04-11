@@ -1,0 +1,147 @@
+/* 全站設定 */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to right, #7db0a6, #95acbe);
+    color: #222;
+  }
+  
+    /* 導覽列 */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background: #d8c69e; /* 這裡改成你要的顏色 */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #005f73;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00b4d8;
+    text-shadow: 0 0 5px #ade8f4;
+  }
+  
+  /* 首頁英雄區塊 */
+  .hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .intro {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    color: #003049;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* 插圖 */
+  .hero img {
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  /* 按鈕 */
+  .btn {
+    background: linear-gradient(to right, #00b4d8, #0077b6);
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00b4d8;
+  }
+  
+  /* 一般頁面內容 */
+  .content {
+    padding: 60px 10%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .content h1 {
+    font-size: 2em;
+    color: #003049;
+  }
+  
+  ul li, p {
+    line-height: 1.6;
+  }
+  
+  /* 作品區塊 */
+  .project-card {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  }
+  
+  /* 響應式設計 */
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro, .hero img {
+      max-width: 100%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
